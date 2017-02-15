@@ -22,13 +22,15 @@
     
            <%= render 'shared/application_nav' %>
          
-       
+           
          
-        <%= yield %>
+            <%= yield %>
         
-        <%= render 'shared/application_footer' %>
+            <%= render 'shared/application_footer' %>
+          
+           <%= source_helper("application") %>
         
-        <%= source_helper("application") %>
+        
         
         </div>
       </div>
