@@ -19,6 +19,19 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
+          
+         
+          <%= video_tag(
+            'coverpage.mp4',
+            id: 'background',
+            autoplay: true,
+            loop: false,
+            muted: true,
+            poster: 'sky.jpg'
+            )
+            %>
+			
+        
     
            <%= render 'shared/application_nav' %>
          
