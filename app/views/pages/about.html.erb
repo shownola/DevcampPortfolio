@@ -5,16 +5,89 @@
 
     <hr>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-5">
         <%= image_tag "sherry.JPG", width: 300, alt: "Profile Image", class: 'profile-img' %>
             
       </div>
-      <div class="col-md-8">
+      <div class="col-md-7">
         <p> Developing software is our passion.  </p>
         <p>We are a highly motivated software company that focuses on building software
         customized to work the way you want. With our keen eye to detail and understanding
         of the needs of a diverse group of industries, we create 
         solutions that will revolutionize your business.</p>
+        
+         <p>
+        <button 
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#jobHistory"
+          aria-expanded="false"
+          aria-controler="jobHistory"
+        >
+           Job History
+        </button>
+        
+        <button 
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#education"
+          aria-expanded="false"
+          aria-controler="education"
+        >
+           Education
+        </button>
+        
+        <button 
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#skills"
+          aria-expanded="false"
+          aria-controler="skills"
+        >
+           Skills/Technologies
+        </button>
+      </p>
+      
+      <p>
+         <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              First American Commercial Lending
+            </div>
+            <div class="card card-block">
+               First National Bank/Pacific Coast Mortgage
+            </div>
+            <div class="card card-block">
+               Pathfinder Mortgage
+            </div>
+         </div>
+         
+         <div class="collapse" id="education">
+            <div class="card card-block">
+              Hinds Jr. College
+            </div>
+            <div class="card card-block">
+               Tulane University
+            </div>
+            <div class="card card-block">
+               Pathfinder Mortgage
+            </div>
+         </div>
+         
+         <div class="collapse" id="skills">
+            <div class="card card-block">
+              Ruby/Rails
+            </div>
+            <div class="card card-block">
+               HTML/CSS
+            </div>
+            <div class="card card-block">
+              Javascript/Node.js
+            </div>
+         </div>
+      </p>
       </div>
     </div>
   </div>
