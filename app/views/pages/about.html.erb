@@ -7,6 +7,22 @@
     <div class="row">
       <div class="col-md-5">
         <%= image_tag "sherry.JPG", width: 300, alt: "Profile Image", class: 'profile-img' %>
+        
+        <div class="skills">
+          <% @skills.each do |skill| %>
+          <div class="skill">
+            <h4><%= skill.title %></h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-warning"
+              role="progressbar"
+              aria-valuenow="<%= skill.percent_utilized %>"
+              aria-valuemax="100"
+              style="width: <%= skill.percent_utilized %>%"
+              > </div>
+            </div>
+          </div>
+          <% end %>
+        </div>
             
       </div>
       <div class="col-md-7">
@@ -43,11 +59,11 @@
           class="btn btn-primary"
           type="button"
           data-toggle="collapse"
-          data-target="#skills"
+          data-target="#Technologies"
           aria-expanded="false"
-          aria-controler="skills"
+          aria-controler="Technologies"
         >
-           Skills/Technologies
+           Technologies
         </button>
       </p>
       
@@ -76,7 +92,7 @@
             </div>
          </div>
          
-         <div class="collapse" id="skills">
+         <div class="collapse" id="Technologies">
             <div class="card card-block">
               Ruby/Rails
             </div>
